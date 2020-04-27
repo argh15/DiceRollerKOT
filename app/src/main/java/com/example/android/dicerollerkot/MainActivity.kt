@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rollDiceImgSecondary: ImageView
     private lateinit var rollButton: Button
     private lateinit var countUpButton: Button
+    private lateinit var clearButton: Button
     private lateinit var rollValuePrimary: TextView
     private lateinit var rollValueSecondary: TextView
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         rollButton = findViewById(R.id.roll_button)
         countUpButton = findViewById(R.id.count_up_button)
+        clearButton = findViewById(R.id.clear_button)
         rollValuePrimary = findViewById(R.id.roll_value_primary)
         rollValueSecondary = findViewById(R.id.roll_value_secondary)
         rollDiceImgPrimary = findViewById(R.id.roll_dice_primary)
@@ -30,6 +32,14 @@ class MainActivity : AppCompatActivity() {
 
         rollButton.setOnClickListener { rollDice(rollValuePrimary, rollValueSecondary, rollDiceImgPrimary, rollDiceImgSecondary) }
         countUpButton.setOnClickListener{ countUp(rollValuePrimary, rollValueSecondary)}
+        clearButton.setOnClickListener { clearAll()}
+    }
+
+    private fun clearAll() {
+        rollValueSecondary.setText(R.string.hello_world)
+        rollValuePrimary.setText(R.string.hello_world)
+        rollDiceImgSecondary.setImageResource(R.drawable.empty_dice)
+        rollDiceImgPrimary.setImageResource(R.drawable.empty_dice)
     }
 
     private fun countUp(textViewPrim: TextView, textViewSecond: TextView) {

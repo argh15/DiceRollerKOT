@@ -6,4 +6,5 @@
     <string name="count_up_btn_text">Count Up</string>
     <string name="alt_text_dice_primary">Primary Dice</string>
     <string name="alt_text_dice_secondary">Secondary Dice</string>
+    <string name="clear_btn_text">Clear</string>
 </resources>

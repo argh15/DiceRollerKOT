@@ -61,4 +61,9 @@
         android:id="@+id/count_up_button"
         android:text="@string/count_up_btn_text" />
 
+    <Button
+        style="@style/ButtonMain"
+        android:id="@+id/clear_button"
+        android:text="@string/clear_btn_text" />
+
 </LinearLayout>
