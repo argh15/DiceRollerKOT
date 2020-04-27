@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DiceRollerKot</string>
+    <string name="roll_btn_text">Roll</string>
+    <string name="hello_world">Hello World !</string>
+    <string name="one">1</string>
+    <string name="count_up_btn_text">Count Up</string>
+    <string name="alt_text_dice_primary">Primary Dice</string>
+    <string name="alt_text_dice_secondary">Secondary Dice</string>
+</resources>
